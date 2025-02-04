@@ -82,3 +82,17 @@ body{
     border: solid rgb(66, 66, 66) 3px;
     padding: 4px;
 }
+
+.list-item-1{
+    color: white;
+    list-style: none;
+}
+
+.videoTitle{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width:80%; 
+    width: 400px;
+    color: white;
+}

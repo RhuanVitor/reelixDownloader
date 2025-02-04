@@ -30,8 +30,8 @@ app.get('/api/getOptions', async (req, res) => {
             };
         });
 
-        const audioOptions = infoFiltered.filter(option => option.format != 'video/mp4')
-        const videoOptions = infoFiltered.filter(option => option.format == 'video/mp4' && parseInt(option.itag) <= 200)
+        const audioOptions = infoFiltered.filter(option => option.format != 'video/mp4' && option.audioBitrate).map(option => ({...option, format: 'mp3'}))
+        const videoOptions = infoFiltered.filter(option => option.format == 'video/mp4' && parseInt(option.itag) <= 200).map(option => ({...option, format: 'mp4'}))
         
         res.status(200).json({
             thumbnail: info.videoDetails.thumbnails.find(thumb => thumb.width == "1920").url, 
