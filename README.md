@@ -14,7 +14,7 @@ Aplicação web para baixar conteúdos de mídia de redes sociais (atualmente, s
 
 ### 2. Clonar repositório
 
-git clone https://github.com/seu-usuario/reelix-downloader.git
+git clone https://github.com/RhuanVitor/reelixDownloader
 
 cd reelix-downloader
 
