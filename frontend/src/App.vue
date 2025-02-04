@@ -116,7 +116,6 @@ export default{
 
     async download(){
       const itag = this.selectedOption.itag
-      alert(`http://localhost:4000/api/download?url=${this.url}&itag=${itag}`)
       try{
         const response = await axios.get(`http://localhost:4000/api/download?url=${this.url}&itag=${itag}`,
           {responseType: 'blob'}
