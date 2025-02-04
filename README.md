@@ -22,10 +22,12 @@ cd reelix-downloader
 
 #### backend:
 cd backend
+
 npm install
 
 #### frontend:
 cd ../frontend
+
 npm install
 
 ### 4. Executar a aplicação
