@@ -34,10 +34,12 @@ npm install
 
 #### Rodar backend:
 cd backend
+
 node server
 
 #### Rodar frontend:
 cd frontend
+
 npm run serve
 
 Depois basta acessar o http://localhost:8080 no navegador.
